@@ -1,0 +1,218 @@
+<!-- EPAM-Task-9:Login/Registration form using HTML,CSS -->
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Epam-Task:Sign in page</title>
+		<meta charset="utf-8" />
+    		<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    		<meta name="viewport" content="width=device-width, initial-scale=1" />  
+		<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Mukta:wght@600&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Mukta:wght@600&family=Poppins:wght@200;300;400&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Gotu&family=Mukta:wght@600&display=swap" rel="stylesheet">
+		<style type="text/css">
+			.div1
+			{
+				background-color:#76CDD8;
+				width:400px;
+				height:20px;
+				color:#FFFFFF;
+				font-family: 'Open Sans', sans-serif;
+				text-align:center;
+				position:relative;
+				left:500px;
+				padding:0px 10px 40px 10px;	
+			}
+			.img1
+			{
+				height:40px;
+				width:40px;
+				position:relative;
+				left:-120px;
+				top:15px;
+			}
+			.img2
+			{
+				height:20px;
+				width:20px;
+				position:relative;
+				left:120px;
+				top:2px;
+			}
+			input[type=text], select 
+			{
+				width: 100%;
+				padding: 12px 20px;
+				margin: 5px 0;
+				display: inline-block;
+				border: 1px solid #ccc;
+				border-radius: 4px;
+				box-sizing: border-box;
+				color:#8d9196;
+			}
+			input[type=password], select 
+			{
+				width: 100%;
+				padding: 12px 20px;
+				margin: 5px 0;
+				display: inline-block;
+				border: 1px solid #ccc;
+				border-radius: 4px;
+				box-sizing: border-box;
+				color:#8d9196;
+			}
+			input[type=submit]
+			{
+				width:400px;
+				height:40px;
+				padding:0px;
+				border:0px;
+				border-radius:5px;
+			}
+			input[type=button]
+			{
+				width:400px;
+				height:40px;
+				padding:0px;
+				border:0px;
+				border-radius:5px;
+			}
+			input[type=submit]:hover
+			{
+				background-color:#32a85a;
+				width:400px;
+				height:40px;
+				padding:0px;
+				border:0px;
+				border-radius:5px;
+			}
+			input[type=button]:hover
+			{
+				background-color:#32a85a;
+				width:400px;
+				height:40px;
+				padding:0px;
+				border:0px;
+				border-radius:5px;
+			}
+			a:link 
+			{
+				text-decoration:none;
+				color:black;
+			}
+			a:link:hover 
+			{
+				text-decoration:underline;
+				color:blue;
+			}
+			.p1
+			{
+				position:relative;
+				left:-110px;
+				top:10px;
+				color:#8d9196;
+			}
+			.p2
+			{
+				position:relative;
+				left:160px;
+				top:-27px;
+				color:#8d9196;
+			}
+			.hLine
+			{
+				width: 100%; 
+				text-align: center; 
+				border-bottom: 1px solid #000; 
+				line-height: 0.1em;
+				color:#8d9196
+				margin: 10px 0 20px; 
+			} 
+
+			.or 
+			{ 
+				background:#fff; 
+				padding:0 20px; 
+				color:#8d9196;
+				font-family: 'Mukta', sans-serif;
+				text-decoration:none;
+				border-color:#fff;
+			}
+			.sign_in
+			{
+				background-color:#76CDD8;
+				color:#FFFFFF;
+				font-family: 'Mukta', sans-serif;
+				font-size:18px;
+				position:relative;
+				left:-2px;
+				top:5px;
+			}
+			.f
+			{
+				background-color:#6582BD;
+				color:#FFFFFF;
+				font-family: 'Poppins', sans-serif;
+				font-size:30px;
+				position:relative;
+				left:-2px;
+				top:30px;
+			}
+			.g
+			{
+				background-color:#E47C6D;
+				color:#FFFFFF;
+				font-family: 'Mukta', sans-serif;
+				font-size:25px;
+				position:relative;
+				left:-2px;
+				top:40px;
+			}
+			.epam_login
+			{
+				background-color:#CEDB56;
+				color:#FFFFFF;
+				font-family: 'Mukta', sans-serif;
+				font-size:18px;
+				position:relative;
+				left:-2px;
+				top:80px;
+			}
+			#msg
+			{
+				position:relative;
+				top:-40px;
+				left:170px;
+			}
+			#lock
+			{
+				position:relative;
+				top:-45px;
+				left:170px;
+			}
+			
+		</style>
+	</head>
+	
+	<body>
+	<form>
+		<div class="div1">
+		
+			<h2><img class="img1" src="hat.jfif" alt="signInLogo" />Sign in<img class="img2" src="x.jpg" alt="x" /></h2>
+			<input type="text" name="email" placeholder="mail@example.com">
+			<img id="msg" src="msg.jpg" alt="msg" />
+			<input type="password" name="password" placeholder="password" minlength="8">
+			<img id="lock" src="lock.jpg" alt="lock" />
+			<input class="sign_in" type="submit" value="SIGN IN" >
+			<p class="p1"><a href="default.asp" target="_blank">Forgot your password?</a></p>
+			<p class="p2"><a href="default.asp" target="_blank">Register!</a></p>
+			<h2 class="hLine"><span class="or">OR</span></h2>
+			<input class="f" type="button" value="f" >
+			<input class="g" type="button" value="g" >
+			<input class="epam_login" type="button" value="< EPAM LOGIN >" >
+		</div>
+	</form>
+	</body>
+</html>
